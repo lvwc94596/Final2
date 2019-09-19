@@ -1,0 +1,28 @@
+@keyframes ani_logo {
+    0% {transform: rotate(0deg);left: -0%;top: 0;}
+    100% {transform: rotate(2880deg);left: 100%;top: 0;}
+}
+
+.nav_img{    
+    left: 0%;
+}
+
+.roll{
+    animation-duration: 60s;
+    animation-direction: alternate;
+}
+
+menu_fill{
+    display: block;
+    width: 90%;
+    height: 60px;
+    float: right;
+}
+
+.polaroid_box{
+    width: 33%;
+}
+
+.polaroid_img{
+    height: 250px;
+}

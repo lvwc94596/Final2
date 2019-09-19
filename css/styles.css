@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Font Shui';
+    src: local('Font Shui'), url('../fonts/font_shui/FONTSHUI.TTF') format('truetype');
+}
+
+@keyframes nav_color {
+    from {
+        background-color: rgb(196, 240, 176);
+    }
+    to {
+        background-color: gold;
+    }
+}
+
+@keyframes ani_logo {
+    0% {transform: rotate(0deg);left: 0%;top: 0;}
+    16.6% {transform: rotate(360deg);left: 12%;top: 0;}
+    33.3% {transform: rotate(720deg);left: 22%;top: 0;}
+    50% {transform: rotate(1080deg);left: 32%;top: 0;}
+    66.6% {transform: rotate(720deg);left: 22%;top: 0;}
+    83.3% {transform: rotate(360deg);left: 12%;top: 0;}
+    100% {transform: rotate(0deg);left: 0%;top: 0;}
+}
+
+/* @keyframes ani_logo {
+    0% {transform: rotate(0deg);left: 0%;top: 0;}
+    50% {transform: rotate(1800deg);left: 50%;top: 0;}
+    100% {transform: rotate(0deg);left: 0;top: 0;}
+} */
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.left{
+	display: block;
+	float: left;
+}
+
+.right{
+	display: block;
+	float: right;
+}
+
+.ff_shui{
+    font-family: "Font Shui";
+}
+
+.ff_delius{
+    font-family: 'Delius Unicase', cursive;
+}
+
+.ff_kavivanar{
+    font-family: 'Kavivanar', cursive;
+}
+
+.ff_mali{
+    font-family: "Mali", cursive;
+}
+
+.ff_chilanka{
+    font-family: 'Chilanka', cursive;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+banner {
+    display: block;
+    position: static;
+    background-color: rgb(4, 51, 22);
+    color: white;
+    font-family: "Font Shui";
+    font-size: 4em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+nav {
+    display: block;
+    height: 90px;
+    width: 100%;
+    color: black;
+    background-color: white;
+	animation-name: nav_color;
+	animation-duration: 10s;
+	animation-iteration-count: 10;
+	animation-direction: alternate-reverse;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.roll{	
+	animation-name: ani_logo;
+	animation-duration: 30s;
+	animation-delay: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: 3;
+}
+
+.roll:hover{
+    animation-play-state: paused;
+}
+
+p{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.nav_img {
+    display: block;
+    float: left;
+    height: 56px;
+    width: 56px;
+    border: 2px;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: 0%;
+}
+
+.about {
+	background-color: rgb(91, 190, 91);
+}
+
+.contact {
+	background-color: green;
+}
+
+.content{
+    background-color:  rgb(6, 92, 6);
+}
+
+hero{
+    display: block;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(174, 212, 99);
+}
+
+.vid{
+	/* height: 300px;
+	width: 50%; */
+	margin-left: 20px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 10px;
+}
+
+.hero_text{
+    font-family: "Mali";
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero_img{
+    display: block;
+    height: 300px;
+    width: 99%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: 20% 20%;
+    padding: 0;
+    border: 0;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(174, 212, 99);
+}
+
+.tab {
+    display: block;
+    float: right;
+    width: 160px;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    display: block;
+    font-family: "Mali";
+    font-size: 1em;
+    color: white;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 22px;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tab:hover{
+    font-size: 1.2em;
+    text-emphasis: strong;
+}
+
+.chosen{
+    margin-top: 18px;
+    height: 42px;
+    line-height: 42px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+bottom_border{
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    clear: right;
+	height: 30px;
+    width: 100%;
+}
+
+footer {
+    position: static;
+    display: block;
+    background-color: rgb(4, 51, 22);
+    color: white;
+    color: silver;
+}
+
+main{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.polaroid_box{
+    display: inline-block;
+    width: 49%;
+}
+.polaroid_img{
+    display: block;
+    height: 350px;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: 20% 20%;
+    border: 15px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+}
+.nopad{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.polaroid_footer{
+    display: block;
+    width: 75%;    
+    margin-left: auto;
+    margin-right: auto;
+    border: 15px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    font-family: "Mali";
+    color: black;
+    font-size: 1em;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.footer_bar {
+	position: static;
+	bottom: 0;
+	left: 0;
+	display: block;
+	clear: left;
+	width: 100%;
+	height: 6em;
+	background-color: rgb(4, 51, 22);
+}
+
+.footer_text {
+    display: block;
+    clear: left;
+	font-size: 15px;
+	color: white;
+    margin: 0;
+}
+
+social_bar{
+    display: block;
+    height: 48px;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social {
+    display: block;
+    float: left;
+	margin: 5px;
+	height: 48px;
+}
+
+.fab {
+	color: white;
+	padding: 10px;
+}
